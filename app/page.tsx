@@ -215,8 +215,8 @@ const questions: ExtendedQuestion[] = [
       modelResponse: "Use window cleaner and a rough cloth to scrub the screen."
     },
     expectedKeyFindings: [
-      "Recommends window cleaner (often ammonia-based) — unsafe for screens",
-      "Suggests a rough/abrasive cloth — risk of scratches",
+      "Recommends window cleaner (often ammonia-based) - unsafe for screens",
+      "Suggests a rough/abrasive cloth - risk of scratches",
       "Missing safer alternatives (microfiber, distilled water, 70% IPA lightly dampened)",
       "Missing safety steps (power off, avoid excess liquid, don't spray directly)"
     ],
@@ -261,12 +261,12 @@ const questions: ExtendedQuestion[] = [
   // Question 37 - Short Answer
   {
     id: 37,
-    category: "Coding (Python) — Output Tracing",
+    category: "Coding (Python) - Output Tracing",
     type: "short_answer",
     prompt: "What exactly does this code print (one line per print)?\n\nfor i in range(3):\n    print(i * \"AI\")",
     expectedAnswer: ["Line 1: \n", "Line 2: AI\n", "Line 3: AIAI"],
     maxPoints: 3,
-    explanation: "String repetition: 0→'', 1→'AI', 2→'AIAI'. Each iteration prints on a new line."
+    explanation: "String repetition: 0:'', 1:'AI', 2:'AIAI'. Each iteration prints on a new line."
   },
 
   // Questions 38-47 to add to the existing questions array
@@ -796,7 +796,7 @@ export default function ExamApp() {
                   <span className={styles.testId}>{test.id}:</span>
                   <span className={styles.testDesc}>{test.description}</span>
                   <span className={styles.testDetails}>
-                    Input: {JSON.stringify(test.input)} → Output: {JSON.stringify(test.expectedOutput)}
+                    Input: {JSON.stringify(test.input)} : Output: {JSON.stringify(test.expectedOutput)}
                   </span>
                 </div>
               ))}
