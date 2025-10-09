@@ -1067,7 +1067,7 @@ export default function ExamApp() {
 
           <div className={styles.footerSection}>
             <p className={styles.footerText}>
-              Navigate through questions and submit when ready. You can review your answers with detailed explanations after submission.
+              Navigate through questions and submit when ready. You can review your answers with detailed explanations after submission. Test your code in your own environment after finishing the exam to ensure your understanding. DO NOT USE AI OR EXTERNAL TOOLS WHILE TAKING THE EXAM. You are encouraged to use AI to teach you/brush up on topics after taking the exam once on your own. Good luck!
             </p>
           </div>
         </div>
