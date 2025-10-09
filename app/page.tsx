@@ -1021,7 +1021,7 @@ export default function ExamApp() {
         <div className={styles.examCard}>
           <div className={styles.headerSection}>
             <div className={styles.headerTop}>
-              <h1 className={styles.examTitle}>DataAnnotation.tech Practice Exam</h1>
+              <h1 className={styles.examTitle}>Data Annotation Practice Exam</h1>
               <span className={styles.answerCount}>
                 {answeredCount} / 47 answered
               </span>
